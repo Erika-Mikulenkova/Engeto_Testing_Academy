@@ -1,7 +1,7 @@
 # **Engeto_projekt_1: Task Manager**
 
 ## Vytvoření programu pomocí Pythonu:
-## Popis projektu:
+### Popis projektu:
 V tomto projektu bylo úkolem vytvořit Task manager pro správu úkolů. Program by měl umožnit přidávat, zobrazovat a odstraňovat úkoly. Každá funkce má svůj specifický úkol, který je popsán níže. Úkoly budou ukládány do seznamu ukoly = []. 
 
 **def hlavni_menu()**  

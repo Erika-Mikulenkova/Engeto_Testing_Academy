@@ -1,12 +1,13 @@
-# **Engeto_projekt_2: Vylepšený Task Manager**
+# **Engeto_projekt_2: Vylepšený správce úkolů**
 
-## Popis projektu:
+## Část 1 - Vylepšení správce úkolů:
+### Popis projektu:
 V tomto projektu bylo úkolem vylepšit správce úkolů z prvního projektu tak, aby úkoly nebyly ukládány v seznamu v paměti, ale aby se ukládaly do MySQL databáze. Program bude provádět operace CRUD (Create, Read, Update, Delete) . Po dokončení projektu napíšete automatizované testy pomocí pytest a MySQL Workbench.
 
-## Požadavky na projekt:
+### Požadavky na projekt:
 Použití MySQL databáze: Vytvořit databázovou tabulku ukoly, která bude obsahovat: id, nazev, popis, stav (nezahájeno, hotovo, probíhá) a datum vytvoreni. Je potřeba vytvořit i samotnou DB, kde bude tabulka ukoly uložena.
 
-## Funkce programu:
+### Funkce programu:
 **pripojeni_db()**  - Připojení k databázi
 - Funkce vytvoří připojení k MySQL databázi.  
 - Pokud připojení selže, zobrazí chybovou zprávu.
@@ -28,7 +29,7 @@ Použití MySQL databáze: Vytvořit databázovou tabulku ukoly, která bude obs
 - Uživatel zadá název a popis úkolu.  
 - Povinné údaje: Název i popis jsou povinné, nesmí být prázdné.  
 - Automatické hodnoty:  
-    1. Úkol dostane ID automaticky.  
+    1. Úkol dostane ID automaticky.
     2. Výchozí stav ukolu: Nezahájeno
 
 - Po splnění všech podmínek se úkol uloží do databáze.
@@ -51,7 +52,9 @@ Použití MySQL databáze: Vytvořit databázovou tabulku ukoly, která bude obs
 - Po potvrzení bude úkol trvale odstraněn z databáze.  
 - Pokud uživatel zadá neexistující ID, program ho upozorní a nechá ho vybrat znovu.
 
-## Testovací případy:
+## Část 2 - Automatizované testy:
 ### Popis projektu:
-V druhé části projektu bylo potřeba vytvořit testovací případy pro každou funkci v projektu Task manager. Tyto případy by měly pokrýt všechny možné cesty a okrajové případy pro každou z funkcí. Testovací případy budou sloužit jako návrh pro automatické testy nebo manuální ověření správnosti programu.
-Pro každou funkci (hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol) byly vytvořeny samostatné sady testovacích případů (pozitivní, negativní, hraniční). Každý test obsahuje: Testovaná funkce, Název testovacího případu, Popis, Vstupní podmínky, Kroky testu, Očekávaný výsledek, Skutečný výsledek, Stav, Poznámky a Typ testu.
+Druhým úkolem je napsat automatizované testy pro správce úkolů, který pracuje s MySQL databází. Testy ověří správnou funkčnost operací přidání, aktualizace a odstranění úkolů pomocí pytest. Testy budou pracovat s testovací databází. Testovací data se budou dynamicky přidávat. Správně by se měli i testovací data smazat - Testy nesmí trvale měnit databázi (testovací data se po testu smažou).
+Každá funkce má 2 testy:  
+1. Pozitivní test – Ověří správnou funkčnost operace.  
+2. Negativní test – Ověří, jak program reaguje na neplatné vstupy.

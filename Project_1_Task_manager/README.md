@@ -1,6 +1,6 @@
 # **Engeto_projekt_1: Task Manager**
 
-## Vytvoření programu pomocí Pythonu:
+## Vytvoření programu pomocí Python:
 ### Popis projektu:
 V tomto projektu bylo úkolem vytvořit Task manager pro správu úkolů. Program by měl umožnit přidávat, zobrazovat a odstraňovat úkoly. Každá funkce má svůj specifický úkol, který je popsán níže. Úkoly budou ukládány do seznamu ukoly = []. 
 
@@ -19,6 +19,6 @@ Tato funkce má uživateli umožnit zadat číslo úkolu, který chce odstranit,
 Pokud uživatel zadá volbu 4 v hlavním menu program se ukončí.
 
 ## Testovací případy:
-## Popis projektu:
+### Popis projektu:
 V druhé části projektu bylo potřeba vytvořit testovací případy pro každou funkci v projektu Task manager. Tyto případy by měly pokrýt všechny možné cesty a okrajové případy pro každou z funkcí. Testovací případy budou sloužit jako návrh pro automatické testy nebo manuální ověření správnosti programu.
 Pro každou funkci (hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol) byly vytvořeny samostatné sady testovacích případů (pozitivní, negativní, hraniční). Každý test obsahuje: Testovaná funkce, Název testovacího případu, Popis, Vstupní podmínky, Kroky testu, Očekávaný výsledek, Skutečný výsledek, Stav, Poznámky a Typ testu.

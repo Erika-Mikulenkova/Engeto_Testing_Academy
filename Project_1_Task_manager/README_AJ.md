@@ -1,24 +1,23 @@
 # **Engeto_project_1: Task Manager**
 
-## Vytvoření programu pomocí Python:
-### Popis projektu:
-V tomto projektu bylo úkolem vytvořit Task manager pro správu úkolů. Program by měl umožnit přidávat, zobrazovat a odstraňovat úkoly. Každá funkce má svůj specifický úkol, který je popsán níže. Úkoly budou ukládány do seznamu ukoly = []. 
+## Creating a Program Using Python:
+### Project Description:
+In this project, the task was to create a Task Manager for managing tasks. The program should allow users to add, view, and delete tasks. Each function has a specific purpose, which is described below. All tasks are stored in the list ukoly = []. 
 
 **def hlavni_menu()**  
-Funkce hlavního menu, která poskytuje možnosti pro přidání, zobrazení a odstranění úkolu. Pokud uživatel zadá neplatnou volbu, program ho upozorní a nechá uživatele opakovat znovu volbu.
+This function displays the main menu, offering options to add, view, or delete a task. If the user enters an invalid option, the program notifies the user and prompts them to choose again.
 
 **def pridat_ukol()**  
-Tato funkce má uživateli umožnit zadat název a popis nového úkolu a uložit jej do seznamu úkolů. Zde platí volba 1 v hlavním menu. Po zadání úkolu program pokračuje dál nabídkou hlavního menu. Při zadání prázdného vstupu do Zadejte název úkolu nebo Popis úkolu, program upozorní uživatele, že zadal prázdný vstup a nechá ho zadat název i popis znovu.
+This function allows the user to enter the title and description of a new task and save it to the task list. This corresponds to option 1 in the main menu. After adding the task, the program continues by displaying the main menu again. If the user enters an empty input for Task title or Task description, the program notifies them and asks them to enter both fields again.
 
 **def zobrazit_ukoly()**  
-Tato funkce má zobrazit všechny úkoly v seznamu. Zde platí volba 2 v hlavním menu. Po zobrazení úkolů program pokračuje dál nabídkou hlavního menu.
+This function displays all tasks in the list. This corresponds to option 2 in the main menu. After displaying the tasks, the program continues by showing the main menu again.
 
 **def odstranit_ukol()**  
-Tato funkce má uživateli umožnit zadat číslo úkolu, který chce odstranit, a tento úkol odstranit. Zde platí volba 3 v hlavním menu. Po odstranění úkolu program pokračuje dál nabídkou hlavního menu. Zde je potřeba, aby uživatel viděl všechny uložené úkoly a při výběru neexistujícího úkolu byl upozorněn.
+This function allows the user to enter the number of the task they want to delete and removes that task from the list. This corresponds to option 3 in the main menu. After deleting the task, the program continues by displaying the main menu. The user must be able to see all existing tasks, and if they select a task that does not exist, the program must notify them.
 
-Pokud uživatel zadá volbu 4 v hlavním menu program se ukončí.
+If the user selects option 4, the program terminates.
 
-## Testovací případy:
-### Popis projektu:
-V druhé části projektu bylo potřeba vytvořit testovací případy pro každou funkci v projektu Task manager. Tyto případy by měly pokrýt všechny možné cesty a okrajové případy pro každou z funkcí. Testovací případy budou sloužit jako návrh pro automatické testy nebo manuální ověření správnosti programu.
-Pro každou funkci (hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol) byly vytvořeny samostatné sady testovacích případů (pozitivní, negativní, hraniční). Každý test obsahuje: Testovaná funkce, Název testovacího případu, Popis, Vstupní podmínky, Kroky testu, Očekávaný výsledek, Skutečný výsledek, Stav, Poznámky a Typ testu.
+## Test Cases:
+### Project Description:
+In the second part of the project, the goal was to create test cases for each function in the Task Manager project. These test cases should cover all possible execution paths as well as edge cases for each function. The test cases serve as a basis for automated tests or manual verification of program correctness. For each function (hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol), separate sets of test cases were created (positive, negative, boundary). Each test includes the following elements: Tested function, Test case name, Description, Preconditions, Test steps, Expected result, Actual result, Status, Notes, and Test type.

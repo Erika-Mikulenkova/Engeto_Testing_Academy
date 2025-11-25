@@ -55,6 +55,7 @@ Použití MySQL databáze: Vytvořit databázovou tabulku ukoly, která bude obs
 ## Část 2 - Automatizované testy:
 ### Popis projektu:
 Druhým úkolem je napsat automatizované testy pro správce úkolů, který pracuje s MySQL databází. Testy ověří správnou funkčnost operací přidání, aktualizace a odstranění úkolů pomocí pytest. Testy budou pracovat s testovací databází. Testovací data se budou dynamicky přidávat. Správně by se měli i testovací data smazat - Testy nesmí trvale měnit databázi (testovací data se po testu smažou).  
+
 Každá funkce má 2 testy:  
 1. Pozitivní test – Ověří správnou funkčnost operace.  
 2. Negativní test – Ověří, jak program reaguje na neplatné vstupy.  

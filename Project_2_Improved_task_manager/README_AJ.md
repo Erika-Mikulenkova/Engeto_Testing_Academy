@@ -55,6 +55,7 @@ Use of a MySQL database: Create a database table ukoly that contains: id, name, 
 ## Part 2 - Automated Tests:
 ### Project Description:
 The second task is to write automated tests for the task manager that works with a MySQL database. The tests will verify the correct functionality of adding, updating, and deleting tasks using pytest. The tests will work with a test database. Test data will be added dynamically. The test data should also be removed afterwards — tests must not permanently change the database (test data is deleted after each test).  
+
 Each function has two tests:  
 1. Positive test – Verifies correct functionality.     
 2. Negative test – Verifies how the program reacts to invalid input.

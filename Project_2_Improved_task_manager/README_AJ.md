@@ -28,8 +28,7 @@ Use of a MySQL database: Create a database table ukoly that contains: id, name, 
 **pridat_ukol()** – Add a task  
 - The user enters the task name and description.  
 - Required fields: Both name and description are mandatory and cannot be empty.  
-
-Automatic values:  
+- Automatic values:  
     1. The task receives its ID automatically.  
     2. Default task status: Nezahájeno (Not started)  
 

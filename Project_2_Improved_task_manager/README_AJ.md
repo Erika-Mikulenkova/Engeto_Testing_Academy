@@ -9,12 +9,12 @@ Use of a MySQL database: Create a database table ukoly that contains: id, name, 
 
 ### Program Functions:
 **pripojeni_db()** - Database connection  
-This function creates a connection to the MySQL database.  
-If the connection fails, it displays an error message.  
+- This function creates a connection to the MySQL database.  
+- If the connection fails, it displays an error message.  
 
 **vytvoreni_tabulky()** - Create the table if it does not exist  
-This function creates the table ukoly if it does not already exist.  
-It verifies whether the table exists in the database.  
+- This function creates the table ukoly if it does not already exist.  
+- It verifies whether the table exists in the database.  
 
 **hlavni_menu()** – Main menu, which displays the following options:  
 1. Přidat úkol (Add task)  

@@ -29,9 +29,9 @@ It verifies whether the table exists in the database.
 - The user enters the task name and description.  
 - Required fields: Both name and description are mandatory and cannot be empty.  
 
-Automatic values:
+Automatic values:  
     1. The task receives its ID automatically.  
-    2. Default task status: Nezahájeno (Not started)
+    2. Default task status: Nezahájeno (Not started)  
 
 - After all conditions are met, the task is saved to the database.
 

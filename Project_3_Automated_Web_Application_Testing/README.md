@@ -1,4 +1,4 @@
-# **EENGETO projekt 3 - Tři automatizované testy**
+# **ENGETO projekt 3 - Tři automatizované testy**
 
 ## Popis projektu:
 Tento projekt je zaměřený na vytvoření automatizované sady UI testů pro webovou aplikaci ROUVY, a to pomocí nástrojů Python, Pytest a Playwright.

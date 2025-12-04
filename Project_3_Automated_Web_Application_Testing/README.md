@@ -27,7 +27,7 @@ Cílem je ověřit klíčovou funkčnost webu, pokrýt hlavní uživatelské sc�
 
 ## Technické provedení:
 
-**Projekt je strukturovaný do:**
+**Projekt je strukturovaný do:**  
 tests/ – obsahuje všechny testovací soubory  
 conftest.py – obsahuje sdílené fixture pro Playwright  
 requirements.txt – seznam potřebných balíčků  

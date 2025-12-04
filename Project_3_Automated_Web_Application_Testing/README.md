@@ -28,15 +28,15 @@ Cílem je ověřit klíčovou funkčnost webu, pokrýt hlavní uživatelské sc�
 ## Technické provedení:
 
 **Projekt je strukturovaný do:**
-tests/ – obsahuje všechny testovací soubory
-conftest.py – obsahuje sdílené fixture pro Playwright
-requirements.txt – seznam potřebných balíčků
-__init__.py – označuje adresář jako Python modul
+tests/ – obsahuje všechny testovací soubory  
+conftest.py – obsahuje sdílené fixture pro Playwright  
+requirements.txt – seznam potřebných balíčků  
+__init__.py – označuje adresář jako Python modul  
 
 **Testy využívají:**
-pytest pro běh testů
-playwright pro UI automatizaci
-re a re.UNICODE pro práci s textovými výrazy v různých jazycích
+- pytest pro běh testů
+- playwright pro UI automatizaci
+- re a re.UNICODE pro práci s textovými výrazy v různých jazycích
 
 ## Přínos projektu:
 - umožňuje rychlé ověření kritických funkcionalit ROUVY

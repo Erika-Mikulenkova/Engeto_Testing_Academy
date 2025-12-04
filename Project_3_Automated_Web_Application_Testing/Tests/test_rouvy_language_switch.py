@@ -42,4 +42,3 @@ def test_language_switch_param(home_page, lang_dropdown, lang, url_pattern, logi
 
     # 4. Informativní výpis do konzole
     print(f"ROUVY Language switch test pro {lang}: úspěšně ověřeno.")
-

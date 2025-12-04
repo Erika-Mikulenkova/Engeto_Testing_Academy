@@ -9,6 +9,7 @@ from playwright.sync_api import expect
     ("monthly", "yearly", "billed monthly"),    # Testuje měsíční předplatné
     ("yearly", "monthly", "billed yearly")  # Testuje roční předplatné
 ])
+
 def test_pricing_param(open_pricing, pricing_tabs, assert_tab_state, plan, other_plan, price_text):
     """Testuje přepínání mezi měsíčním a ročním předplatným a kontroluje zobrazení cen a stav tabů."""
 

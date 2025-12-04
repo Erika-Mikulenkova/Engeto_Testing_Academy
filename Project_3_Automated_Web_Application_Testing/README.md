@@ -18,7 +18,6 @@ Cílem je ověřit klíčovou funkčnost webu, pokrýt hlavní uživatelské sc�
 
 **2. Pricing test**
 - Ověřuje fungování sekce cen: existence plánů, správné texty a ceny, validní načtení stránky ceníků.
-- Tento test pomáhá odhalit změny nebo problémy ve veřejném pricing modelu.
 
 **3. Language switch test**
 - Nejkomplexnější část projektu.

@@ -84,7 +84,6 @@ def lang_dropdown(page: Page):
     provede fallback kliknutí.
     """
     def _open():
-
         # Lokátor tlačítka jazykového menu
         lang_button = page.locator(
             "button[aria-haspopup='menu']:has(svg), "
@@ -103,11 +102,11 @@ def lang_dropdown(page: Page):
             "[role='menu']"
         )
 
-        # Čekáme max 2 sekundy – pokud se neotevře, zkusíme znovu
+        # Čeká max 2 sekundy – pokud se neotevře, zkusí znovu
         try:
             dropdown.first.wait_for(state="visible", timeout=2000)
         except:
-            # Čeština způsobí reload? Zkusíme klik 2.
+            # Čeština způsobí reload? Zkusí klik 2.
             lang_button.click(force=True)
             dropdown.first.wait_for(state="visible", timeout=6000)
 

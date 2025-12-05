@@ -36,7 +36,7 @@ requirements.txt – seznam potřebných balíčků
 **Testy využívají:**
 - pytest pro běh testů
 - playwright pro UI automatizaci
-- re a re.UNICODE pro práci s textovými výrazy v různých jazycích
+- regex pro práci s textovými výrazy v různých jazycích
 
 **Pospup pro instalaci a spuštění testů:**  
 - `pip install -r requirements.txt` – nainstaluje závislosti projektu  

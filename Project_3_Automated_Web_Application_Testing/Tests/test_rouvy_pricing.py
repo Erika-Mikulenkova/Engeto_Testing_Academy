@@ -16,7 +16,7 @@ def test_pricing_param(open_pricing, pricing_tabs, assert_tab_state, plan, other
     Testuje přepínání mezi měsíčním a ročním předplatným a kontroluje zobrazení cen a stav tabů.
     """
     page = open_pricing
-    plan_tab = pricing_tabs[plan]   # Aktivní tab, který chceme testovat
+    plan_tab = pricing_tabs[plan]           # Aktivní tab, který se bude testovat
     other_tab = pricing_tabs[other_plan]    # Pasivní tab, který by měl být neaktivní
 
     # 1. Ověření, že sekce s pricingem je viditelná
@@ -27,7 +27,7 @@ def test_pricing_param(open_pricing, pricing_tabs, assert_tab_state, plan, other
     # 2. Kliknutí na aktivní plán a ověření stavu tabů
     plan_tab.wait_for(state="visible", timeout=10000)
     plan_tab.click(timeout=10000)
-    assert_tab_state(plan_tab, other_tab)   # Ověření, že aktivní a pasivní tab má správnou třídu
+    assert_tab_state(plan_tab, other_tab)    # Ověření, že aktivní a pasivní tab má správnou třídu
 
     # 3. Ověření zobrazení správné ceny pro aktivní plán
     prices = page.locator(f"text=/{price_text}/i").first
@@ -36,5 +36,3 @@ def test_pricing_param(open_pricing, pricing_tabs, assert_tab_state, plan, other
 
     # 4. Informativní výpis do konzole
     print(f"ROUVY Pricing test: {plan} ceny a stav tabů ověřeny.")
-
-

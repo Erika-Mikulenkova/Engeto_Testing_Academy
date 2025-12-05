@@ -2,5 +2,5 @@ pytest==8.3.2
 pytest-playwright==0.5.0
 playwright==1.48.0
 
-# Pro regulární výrazy v assertu s unicode texty
 regex==2024.5.15
+# Podporuje Unicode a pokročilé regulární výrazy pro asserty s texty obsahujícími diakritiku (např. češtinu).

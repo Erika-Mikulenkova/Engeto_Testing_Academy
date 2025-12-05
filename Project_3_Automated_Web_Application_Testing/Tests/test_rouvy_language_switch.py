@@ -16,7 +16,7 @@ from playwright.sync_api import expect
 
 def test_language_switch_param(home_page, lang_dropdown, lang, url_pattern, login_text):
     """
-    Testuje přepínání jazyků, kontroluje URL a hlavní text na stránce.
+    Testuje přepínání jazyků, kontroluje URL a text na stránce.
     Používá re.escape pro názvy jazyků s diakritikou, aby Playwright locator našel správně element.
     """
     page = home_page
@@ -33,7 +33,7 @@ def test_language_switch_param(home_page, lang_dropdown, lang, url_pattern, logi
     # 2. Ověření URL
     expect(page).to_have_url(re.compile(url_pattern))
 
-    # 3. Ověření textu na stránce
+    # 3. Ověření textu na stránce (tlačítko Login)
     login_button = page.get_by_role(
         "link",
         name=re.compile(login_text, re.IGNORECASE | re.UNICODE)

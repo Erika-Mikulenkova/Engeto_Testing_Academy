@@ -2,7 +2,8 @@
 
 ## Popis projektu:
 Tento projekt je zaměřený na vytvoření automatizované sady UI testů pro webovou aplikaci ROUVY, a to pomocí nástrojů Python, Pytest a Playwright.
-Cílem je ověřit klíčovou funkčnost webu, pokrýt hlavní uživatelské scénáře a zajistit, že základní části webu fungují správně napříč jazyky i prostředími.
+Cílem je ověřit klíčovou funkčnost webu, pokrýt hlavní uživatelské scénáře a zajistit, že základní části webu fungují správně napříč jazyky.
+Testy byly psány pro Chromium. Pro ostatní prohlížeče by bylo potřeba upravit selektory a timeouty.
 
 ## Hlavní cíle projektu:
 - Ověřit, že domovská stránka ROUVY funguje správně.

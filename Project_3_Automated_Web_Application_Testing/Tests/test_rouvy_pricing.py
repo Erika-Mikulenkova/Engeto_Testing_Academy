@@ -1,13 +1,14 @@
 import pytest
 from playwright.sync_api import expect
 
-# Parametrizace pro testování měsíčního a ročního plánu
-# plan = aktivní plán, který testujeme
+# parametrizace pro testování měsíčního a ročního plánu
+# plan = aktivní plán, který se testuje
 # other_plan = pasivní plán, který by měl být neaktivní
 # price_text = očekávaný text s cenou, který se zobrazí po aktivaci plánu
+
 @pytest.mark.parametrize("plan, other_plan, price_text", [
     ("monthly", "yearly", "billed monthly"),    # Testuje měsíční předplatné
-    ("yearly", "monthly", "billed yearly")  # Testuje roční předplatné
+    ("yearly", "monthly", "billed yearly")      # Testuje roční předplatné
 ])
 
 def test_pricing_param(open_pricing, pricing_tabs, assert_tab_state, plan, other_plan, price_text):
@@ -34,3 +35,4 @@ def test_pricing_param(open_pricing, pricing_tabs, assert_tab_state, plan, other
 
     # 4. Informativní výpis do konzole
     print(f"ROUVY Pricing test: {plan} ceny a stav tabů ověřeny.")
+

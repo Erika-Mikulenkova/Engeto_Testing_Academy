@@ -38,6 +38,12 @@ __init__.py – označuje adresář jako Python modul
 - playwright pro UI automatizaci
 - re a re.UNICODE pro práci s textovými výrazy v různých jazycích
 
+**Pospup pro instalaci a spuštění testů:**
+pip install -r requirements.txt - nainstaluje závislosti projektu  
+playwright install chromium - nainstaluje Playwright pro Chromium:
+pytest -v - spustí testy
+pytest -v --browser chromium
+
 ## Přínos projektu:
 - umožňuje rychlé ověření kritických funkcionalit ROUVY
 - odhaluje vizuální i funkční regresní chyby

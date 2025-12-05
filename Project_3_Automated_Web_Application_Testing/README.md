@@ -38,11 +38,16 @@ __init__.py – označuje adresář jako Python modul
 - playwright pro UI automatizaci
 - re a re.UNICODE pro práci s textovými výrazy v různých jazycích
 
-**Pospup pro instalaci a spuštění testů:**
-pip install -r requirements.txt - nainstaluje závislosti projektu  
-playwright install chromium - nainstaluje Playwright pro Chromium:
-pytest -v - spustí testy
-pytest -v --browser chromium
+**Pospup pro instalaci a spuštění testů:**  
+- `pip install -r requirements.txt` – nainstaluje závislosti projektu  
+  > Poznámka: Pokud se objeví chyba při instalaci balíčku `regex` na Windows, je potřeba mít nainstalovaný **Microsoft C++ Build Tools**.
+
+- `playwright install` – nainstaluje Playwright pro Python  
+  > Poznámka: Pro tuto verzi testů stačí, že je nainstalován **Chromium**, protože testy jsou psané jen pro něj.
+
+- `pytest -v` – spustí testy standardně
+
+- `pytest -v --browser chromium` – spustí testy explicitně s Chromium
 
 ## Přínos projektu:
 - umožňuje rychlé ověření kritických funkcionalit ROUVY

@@ -28,10 +28,10 @@ Testy byly psány pro Chromium. Pro ostatní prohlížeče by bylo potřeba upra
 ## Technické provedení:
 
 **Projekt je strukturovaný do:**  
-tests/ – obsahuje všechny testovací soubory  
+tests/ – obsahuje všechny testovací soubory, conftest.py a `__init__.py`  
 conftest.py – obsahuje sdílené fixture pro Playwright  
 requirements.txt – seznam potřebných balíčků  
-__init__.py – označuje adresář jako Python modul  
+`__init__.py` – označuje adresář jako Python modul  
 
 **Testy využívají:**
 - pytest pro běh testů

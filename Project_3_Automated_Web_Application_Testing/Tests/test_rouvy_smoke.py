@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import expect
 
 def test_homepage_smoke(page):
-    # 1. Otevře hlavní stránku a ověří správné načtení (HTTP status 200)
+    # 1. Otevře hlavní stránku a ověří správné načtení
     print("Otevírám hlavní stránku ROUVY...")
     response = page.goto("https://www.rouvy.com")
     assert response.ok, "Stránka se nenačetla správně (HTTP status není OK)"
@@ -14,8 +14,8 @@ def test_homepage_smoke(page):
 
     # 3. Ověří viditelnost hlavního menu a jeho interaktivitu
     main_menu = page.locator("nav")
-    expect(main_menu).to_be_visible(timeout=10000)  # Kontrola viditelnosti menu
-    expect(main_menu).to_be_enabled(timeout=10000)  # Kontrola, že menu je interaktivní
+    expect(main_menu).to_be_visible(timeout=10000)      # Kontrola viditelnosti menu
+    expect(main_menu).to_be_enabled(timeout=10000)      # Kontrola, že menu je interaktivní
     print("Hlavní menu je viditelné a interaktivní.")
 
     # 4. Ověří hlavní CTA tlačítko (viditelné a připravené k interakci)

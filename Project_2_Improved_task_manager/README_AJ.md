@@ -2,7 +2,7 @@
 
 ## Part 1 - Task manager improvement:
 ### Project Description:
-The goal of this project was to improve the task manager from the first project so that tasks are no longer stored in an in-memory list but are instead stored in a MySQL database. The program will perform CRUD operations (Create, Read, Update, Delete). After completing the project, you will write automated tests using pytest and MySQL Workbench.  
+The goal of this project was to improve the task manager from the first project so that tasks are no longer stored in an in-memory list but are instead stored in a MySQL database. The program will perform CRUD operations (Create, Read, Update, Delete).  
 
 ### Project Requirements:
 Use of a MySQL database: Create a database table ukoly that contains: id, name, description, status (not started, completed, in progress), and creation date. You must also create the database itself where the table ukoly will be stored.  

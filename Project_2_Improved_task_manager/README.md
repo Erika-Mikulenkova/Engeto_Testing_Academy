@@ -2,7 +2,7 @@
 
 ## Část 1 - Vylepšení správce úkolů:
 ### Popis projektu:
-V tomto projektu bylo úkolem vylepšit správce úkolů z prvního projektu tak, aby úkoly nebyly ukládány v seznamu v paměti, ale aby se ukládaly do MySQL databáze. Program bude provádět operace CRUD (Create, Read, Update, Delete) . Po dokončení projektu napíšete automatizované testy pomocí pytest a MySQL Workbench.  
+V tomto projektu bylo úkolem vylepšit správce úkolů z prvního projektu tak, aby úkoly nebyly ukládány v seznamu v paměti, ale aby se ukládaly do MySQL databáze. Program bude provádět operace CRUD (Create, Read, Update, Delete).
 
 ### Požadavky na projekt:
 Použití MySQL databáze: Vytvořit databázovou tabulku ukoly, která bude obsahovat: id, nazev, popis, stav (nezahájeno, hotovo, probíhá) a datum vytvoreni. Je potřeba vytvořit i samotnou DB, kde bude tabulka ukoly uložena.  
